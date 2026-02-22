@@ -2,10 +2,10 @@ import React from "react";
 import BigStarImg from "../../../assets/BigStar.png";
 const HomeCollection = () => {
   return (
-    <div>
-      <div className="flex items-start">
+    <div className=" pl-[80px] pb-[80px] border-[#262626] border-dashed border-r-[3px] border-l-[3px] ">
+      <div className="flex items-start ">
         {" "}
-        <div>
+        <div className="mt-[80px] ">
           <h2 className="uppercase text-[48px] text-[white] font-normal font-[Roboto]">
             Elevate Your Style with Our Latest Collection
           </h2>
@@ -27,7 +27,7 @@ const HomeCollection = () => {
             </button>
           </div>
         </div>
-        <img src={BigStarImg} alt="BigStarImg" />
+        <img src={BigStarImg} alt="BigStarImg" className="ml-[10%]" />
       </div>
     </div>
   );
