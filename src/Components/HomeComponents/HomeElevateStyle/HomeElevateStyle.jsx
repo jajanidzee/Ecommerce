@@ -1,13 +1,14 @@
 import React from "react";
 import GirlImg from "../../../assets/Girl.png";
 import { MdArrowOutward } from "react-icons/md";
+import HomeAllButtons from "../HomeAllButtons/AllButtons";
 const HomeElevateStyle = () => {
   return (
     <>
       {" "}
       <div className="relative">
         <img src={GirlImg} alt="GirlImg " />
-        <button className="bg-[#1F1F1F] absolute bottom-[-35px] left-[45%] w-[159px] h-[63px] rounded-[12px] text-[#FFFFFF] font-[Roboto_Mono] font-normal text-[18px]  border-[1px] border-[#AE9B84] border-dashed flex items-center gap-[4px] pt-[21px] pr-[24px] pl-[24px] pb-[24px]">
+        <button className="text-nowrap bg-[#1F1F1F] absolute bottom-[-35px] left-[45%] w-[159px] h-[63px] rounded-[12px] text-[#FFFFFF] font-[Roboto_Mono] font-normal text-[18px]  border-[1px] border-[#AE9B84] border-dashed flex items-center gap-[4px] pt-[21px] pr-[24px] pl-[24px] pb-[24px] hover:bg-[#C2B4A3] hover:text-[#0F0F0F] cursor-pointer">
           Shop Now
           <MdArrowOutward />
         </button>
@@ -16,18 +17,10 @@ const HomeElevateStyle = () => {
         <div className="w-[798px] pl-[80px] pt-[41.5px] pr-[80px[ pb-[81px] border-b-[3px]  border-[#262626] border-dashed border-l-[3px]  ">
           <div>
             <div className="flex items-center gap-[14px] mb-[30px]">
-              <button className="rounded-[12px] border-[2px] border-[#262626] border-dashed h-[55px] w-[81px] text-[#B3B3B2] text-[18px] font-[Roboto_Mono] font-medium ">
-                All
-              </button>
-              <button className="rounded-[12px] border-[2px] border-[#262626] border-dashed h-[55px] w-[92px] text-[#B3B3B2] text-[18px] font-[Roboto_Mono] font-medium">
-                Mens
-              </button>
-              <button className="rounded-[12px] border-[2px] border-[#262626] border-dashed h-[55px] w-[113px] text-[#B3B3B2] text-[18px] font-[Roboto_Mono] font-medium">
-                Womens
-              </button>
-              <button className="rounded-[12px] border-[2px] border-[#262626] border-dashed h-[55px] w-[92px] text-[#B3B3B2] text-[18px] font-[Roboto_Mono] font-medium ">
-                Kids
-              </button>
+              <HomeAllButtons btn1="All" />
+              <HomeAllButtons btn1="Mens" />
+              <HomeAllButtons btn1="Womens" />
+              <HomeAllButtons btn1="Kids" />
             </div>
             <h2 className="uppercase text-white text-[48px] font-[Roboto_Mono] leading-[110%] font-normal mb-[30px]">
               Elevate Your Style with StyleLoom

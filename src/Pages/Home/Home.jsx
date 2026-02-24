@@ -3,6 +3,7 @@ import { Header } from "../../Components/Header/HEader";
 import HomeElevateStyle from "../../Components/HomeComponents/HomeElevateStyle/HomeElevateStyle";
 import HomeCrafting from "../../Components/HomeComponents/HomeCrafting/HomeCrafting";
 import HomeCollection from "../../Components/HomeComponents/HomeCollection/HomeCollection";
+import HomeAnswers from "../../Components/HomeComponents/HomeAnswers/HomeAnswers";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeElevateStyle />
       <HomeCrafting />
       <HomeCollection />
+      <HomeAnswers />
     </div>
   );
 };
