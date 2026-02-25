@@ -1,12 +1,12 @@
 import React from "react";
-import Buttons from "../../WearButtons/WearButtons";
+import Buttons from "../../HomeWearButtons/HomeWearButtons";
 import { TbPointFilled } from "react-icons/tb";
-import WearButtons from "../../WearButtons/WearButtons";
+import HomeWearButtons from "../../HomeWearButtons/HomeWearButtons";
 const HomeCollectionDivs = ({ img, h4, p, price, span, span2 }) => {
   return (
     <div className="w-[532px] h-[639px] pl-[30px] pt-[30px] pr-[30px] pb-[30px]  border-r-[3px] border-[#262626] border-dashed border-t-[3px] border-[#262626] border-dashed  ">
       <img src={img} alt="EveningDressImg" className="" />
-      <WearButtons />
+      <HomeWearButtons />
       <h4 className="uppercase text-[24px] font-medium font-[Roboto_Mono] text-[#FFFFFF]">
         {h4}
       </h4>

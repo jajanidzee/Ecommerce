@@ -2,16 +2,22 @@ import React from "react";
 import GirlImg from "../../../assets/Girl.png";
 import { MdArrowOutward } from "react-icons/md";
 import HomeAllButtons from "../HomeAllButtons/AllButtons";
+import { motion } from "motion/react";
 const HomeElevateStyle = () => {
   return (
     <>
       {" "}
       <div className="relative">
-        <img src={GirlImg} alt="GirlImg " />
-        <button className="text-nowrap bg-[#1F1F1F] absolute bottom-[-35px] left-[45%] w-[159px] h-[63px] rounded-[12px] text-[#FFFFFF] font-[Roboto_Mono] font-normal text-[18px]  border-[1px] border-[#AE9B84] border-dashed flex items-center gap-[4px] pt-[21px] pr-[24px] pl-[24px] pb-[24px] hover:bg-[#C2B4A3] hover:text-[#0F0F0F] cursor-pointer">
+        <img src={GirlImg} alt="GirlImg " className="pt-[123px]" />
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onHoverStart={() => console.log("hover started!")}
+          className="text-nowrap bg-[#1F1F1F] absolute bottom-[-35px] left-[45%] w-[159px] h-[63px] rounded-[12px] text-[#FFFFFF] font-[Roboto_Mono] font-normal text-[18px]  border-[1px] border-[#AE9B84] border-dashed flex items-center gap-[4px] pt-[21px] pr-[24px] pl-[24px] pb-[24px] hover:bg-[#C2B4A3] hover:text-[#0F0F0F] cursor-pointer"
+        >
           Shop Now
           <MdArrowOutward />
-        </button>
+        </motion.button>
       </div>
       <div className="flex items-center ">
         <div className="w-[798px] pl-[80px] pt-[41.5px] pr-[80px[ pb-[81px] border-b-[3px]  border-[#262626] border-dashed border-l-[3px]  ">
