@@ -8,7 +8,7 @@ const HomeElevateStyle = () => {
     <>
       {" "}
       <div className="relative">
-        <img src={GirlImg} alt="GirlImg " className="pt-[123px]" />
+        <img src={GirlImg} alt="GirlImg " className="" />
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
