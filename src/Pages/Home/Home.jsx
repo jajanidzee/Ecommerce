@@ -8,7 +8,7 @@ import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
-    <div className="max-w-[1920px] bg-[#0F0F0F] m-auto  pl-[162px] pr-[162px] pt-[47px]  ">
+    <div className="max-w-[1920px] bg-[#0F0F0F] m-auto  pl-[162px] pr-[162px] pt-[47px]">
       <Header />
       <HomeElevateStyle />
       <HomeCrafting />
